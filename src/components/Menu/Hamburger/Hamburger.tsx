@@ -8,7 +8,7 @@ interface Props {
 
 const Hamburger: FC<Props> = ({ onClick, isOpen }) => {
   return (
-    <HamburgerMenu onClick={onClick}>
+    <HamburgerMenu onClick={onClick} active={isOpen}>
       <HamburgerItem active={isOpen} />
     </HamburgerMenu>
   )
