@@ -1,7 +1,10 @@
 const colors = {
   $white: '#ffffff',
   $pink: '#E96269',
+  $darkPink: '#9e4146',
 }
+
+const transition = '300ms ease-in-out'
 
 const fontFamily = {
   $pragmatica: 'Pragmatica',

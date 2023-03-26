@@ -36,9 +36,11 @@ const GlobalStyles = createGlobalStyle`
     }
 
     #root {
-      flex: 1;
-      display: flex;
-      justify-content: center;
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
     }
   }
   a {
