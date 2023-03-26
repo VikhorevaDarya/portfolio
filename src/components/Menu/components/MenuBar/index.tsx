@@ -1,12 +1,14 @@
 import { FC } from 'react'
+
 import { Bar, MenuItem } from './styles'
+import { menuItems } from './config'
 
 const MenuBar: FC = () => {
   return (
     <Bar>
-      <MenuItem>Projects</MenuItem>
-      <MenuItem>About me</MenuItem>
-      <MenuItem>Contacts</MenuItem>
+      {menuItems.map((item) => (
+        <MenuItem key={item.id}>{item.title}</MenuItem>
+      ))}
     </Bar>
   )
 }

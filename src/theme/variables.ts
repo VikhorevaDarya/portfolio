@@ -80,4 +80,4 @@ const fonts = {
   `,
 }
 
-export { colors, fontFamily, fonts, fontWeight }
+export { colors, fontFamily, fonts, fontWeight, transition }

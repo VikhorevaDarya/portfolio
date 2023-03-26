@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC, useState, useCallback } from 'react'
 
 import { DropDown, StyledMenu } from './styles'
 import { Hamburger, MenuBar } from './components'
@@ -6,9 +6,9 @@ import { Hamburger, MenuBar } from './components'
 const Menu: FC = () => {
   const [isOpen, setisOpen] = useState(false)
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     setisOpen(!isOpen)
-  }
+  }, [isOpen])
 
   return (
     <StyledMenu>
